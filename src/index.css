@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: './assets/fonts/UbuntuMono-Regular.ttf';
+  font-weight: 400;
+  font-style: 'normal';
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: './assets/fonts/NotoSans-Medium.ttf';
+  font-weight: 500;
+  font-style: 'normal';
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Ubuntu Mono', sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.container__input{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.container__input.mini{
+  max-width: 700px;
+  justify-content: flex-start;
+}
+
+.container__input.mini > .inputs{
+  width: 350px;
+}
+
+.title{
+  margin-bottom: 14px;
+}
+
+.subtitle{
+  margin-bottom: 4px;
+}
+
+input,
+textarea{
+  font-family: 'Noto Sans', sans-serif;
+  font-style: normal;
+  max-width: 200px;
+  border-radius: 8px;
+  border: 1px solid #828282;
+  padding: 18px 12px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.title{
+  font-size: 12px;
+}
+
+.normal .title{
+  color: #333333;
+}
+
+.normal.hover .title,
+.normal.blue .title,
+.normal.error .title{
+  color: #828282;
+}
+
+.blue .subtitle{
+  color: #2962FF;
+}
+
+.normal input{
+  border: 1px solid #828282;
+}
+
+.normal.hover input{
+  border: 1px solid #333333;
+}
+
+.blue input{
+  border: 1px solid #2962FF;
+}
+
+.error .subtitle, 
+.error .helper{
+  color:#D32F2F;
+}
+
+.error input{
+  border: 1px solid #D32F2F;
+}
+
+.helper{
+  font-size: 10px;
+}
+
+.normal.sm input{
+  padding: 10px 12px;
+}
+
+.normal.md input{
+  padding: 18px 12px;
+}
+
+.normal.fullWidth{
+  width: 100%;
+}
+
+.normal.fullWidth input{
+  max-width: none;
+  width: 100%;
+}
+
+textarea{
+  resize: none;
+}
+
+footer{
+  text-align: center;
+  padding-bottom: 40px;
+  color: #9E9E9E;
+}
+
+footer a{
+  color: #5a5a5a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.inputs-icons{
+  position: relative;
+}
+
+.inputs-icons.icons{
+  border: 1px solid #828282;
+  width: 220px;
+  border-radius: 8px;
+}
+
+.icons input{
+  border: none;
+}
+
+.material-icons{
+  color: #828282;
+  position: absolute;
+}
+
+.iconStart{
+  padding-left: 20px;
+}
+
+.start{
+  top: 15px;
+  left: 5px;
+}
+
+.end{
+  top: 15px;
+  right: 5px;
+}
